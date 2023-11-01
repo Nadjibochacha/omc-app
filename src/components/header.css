@@ -1,0 +1,66 @@
+.logo{
+    width: 45px;
+    border-radius: 50%;
+}
+
+.nav{
+    background: #00000098;
+    z-index: 2;
+    position: sticky;
+    top: 0;
+}
+.d-item{
+    background: #00000098;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.02rem;
+    margin-bottom: 2px;
+}
+
+.nav-items{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    font-weight: 600;
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav .btn-log{
+    background: #1063fd;
+    color: whitesmoke;
+    padding: 5px 30px;
+    font-size: 1.1rem;
+    letter-spacing: 0.04rem;
+    border: none;
+    border: 5px;
+    outline: none;
+    transition: all ease-out 0.5s;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.nav .btn-log:hover, .nav .btn-log:focus{
+    transform: scale(1.1);
+    background: #1063fda1;
+    letter-spacing: 0.13rem;
+}
+
+@media (max-width:991px) {
+    .nav .btn-log{
+        position: relative;
+        left: 42%;
+    }
+    .nav{
+        background: #000000be;
+    }
+}
