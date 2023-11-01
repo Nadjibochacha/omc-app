@@ -7,7 +7,7 @@ import LoginSection from '../components/loginSection'
 const Login = () => {
   return (
     <div>
-      <Header btn="sign in"/>
+      <Header/>
 
       <LoginSection/>
 
