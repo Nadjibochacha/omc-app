@@ -6,6 +6,7 @@ import Home from "./pages/homepage";
 import Login from "./pages/login";
 import Licence from "./pages/licence";
 import Master from "./pages/master";
+import AdminDachboard from "./pages/adminDachboard";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/Licence" element={<Licence />} />
         <Route path="/Master" element={<Master />} />
         <Route path="/Login" element={<Login />} />
+        <Route path="/AdminDachboard" element={<AdminDachboard />} />
       </Routes>
     </BrowserRouter>
   );

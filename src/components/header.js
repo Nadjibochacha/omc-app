@@ -13,7 +13,7 @@ class Header extends Component {
     return (
       <Navbar expand="lg" className="nav navbar-dark">
         <Container fluid className="ms-4 me-4">
-          <Navbar.Brand href="/Home">
+          <Navbar.Brand href="/">
             <img src={Tlsi} alt="logo" className="logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -26,8 +26,11 @@ class Header extends Component {
                 Licence
               </Nav.Link>
 
-               <Nav.Link href="/Master" className="text-light me-lg-5 nav-link">
+              <Nav.Link href="/Master" className="text-light me-lg-5 nav-link">
                 master
+              </Nav.Link>
+              <Nav.Link href="/AdminDachboard" className="text-light me-lg-5 nav-link">
+                admin
               </Nav.Link>
             </Nav>
             {this.props.Btn === "login" ? (

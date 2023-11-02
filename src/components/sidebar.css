@@ -1,0 +1,172 @@
+#dashboard {
+  background: #198754;
+  display: flex;
+  justify-content: space-between;
+}
+#dashboard .menu {
+  background: rgba(0, 0, 0, 0.4);
+  width: 7rem;
+  height: 100vh;
+  overflow-x: hidden;
+  transition: all 0.5s ease-in;
+  position: fixed;
+}
+#dashboard .menu:hover {
+  width: 26vw;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+#dashboard .menu ul li i {
+  font-size: 1.2em;
+  margin-right: 20px;
+}
+
+#dashboard .profile img {
+  width: 4em;
+  border: none;
+  border-radius: 4em;
+}
+#dashboard .profile h2 {
+  display: inline;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2rem;
+  letter-spacing: 0.2rem;
+  text-transform: capitalize;
+  color: white;
+}
+#dashboard ul {
+  list-style: none;
+}
+#dashboard .menu .item a{
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  text-decoration: none;
+}
+#dashboard .menu .item {
+  text-decoration: none;
+  margin: 5px 0;
+  padding: 8px;
+  display: block;
+  border-radius: 20px;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  transition: all ease-out 0.5s;
+  text-transform: capitalize;
+  color: #fff;
+  cursor: pointer;
+}
+#dashboard .profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+#dashboard .menu .item:hover {
+  background: #198754;
+  transform: scale(1.05);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+#dashboard .log-out {
+  position: absolute;
+  bottom: 5vh;
+  width: 92%;
+}
+#dashboard .menu .log-out:hover {
+  background-color: red;
+}
+#dashboard .content {
+  width: 90%;
+  min-height: 100vh;
+  margin: 0px 5px 5px 40px;
+  position: relative;
+  left: 10rem;
+  z-index: 0;
+}
+#dashboard .title {
+  background: rgba(0, 0, 0, 0.4);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 40px;
+  color: #fff;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.8rem;
+  letter-spacing: 0.4rem;
+  text-transform: capitalize;
+}
+#dashboard .dash-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#dashboard .dash-content > div {
+  background: #c6b99a;
+  flex-basis: 150px;
+  flex-grow: 1;
+  height: 150px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 3.7rem 0;
+  font-size: 1.8rem;
+}
+#dashboard .dash-content div i {
+  font-size: 3rem;
+}
+#dashboard .dash-content div h5 {
+  font-size: 2.625rem;
+  color: #fff;
+  text-align: center;
+  font-size: 2.625rem;
+  font-weight: 700;
+  line-height: 1.5625rem; /* 59.524% */
+  letter-spacing: 0.315rem;
+  text-transform: capitalize;
+}
+/* addition */
+
+.Adform {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  margin-top: 4rem;
+  border-radius: 10px;
+  color: white;
+}
+
+.Adform .inputs {
+  font-size: 1.2rem;
+}
+
+.Adform .btn-login {
+  background: #1063fd;
+  color: whitesmoke;
+  padding: 5px 30px;
+  font-size: 1.1rem;
+  letter-spacing: 0.04rem;
+  border: none;
+  border: 5px;
+  outline: none;
+  transition: all ease-out 0.5s;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.Adform .btn-login:hover,
+.form .btn-login:focus {
+  transform: scale(1.1);
+  background: #1063fda1;
+  letter-spacing: 0.13rem;
+}
