@@ -1,0 +1,21 @@
+.table{
+    padding: 7px;
+    overflow-x: hidden;
+
+}
+
+.table th, .table tr td:first-child{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.table tr td{
+    font-weight: 500;
+}
+
+@media (max-width:500px) {
+    .table{
+        overflow-x: scroll;
+    }
+}

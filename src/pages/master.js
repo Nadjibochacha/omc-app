@@ -4,11 +4,12 @@ import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import Timeslot from "../components/timeslot";
 
 const Master = () => {
   const [key, setKey] = useState("home");
   return (
-    <div>
+    <div className="bg-success " style={{height:'100vh'}}>
       <Header btn="login" />
       <div className="tabs">
         <Tabs
@@ -18,22 +19,22 @@ const Master = () => {
           className="mb-3"
         >
           <Tab eventKey="sitw" title="M1 sitw">
-            Tab content for Home
+            <Timeslot />
           </Tab>
           <Tab eventKey="sitw2" title="M2 sitw">
-            Tab content for Profile
+            <Timeslot />
           </Tab>
           <Tab eventKey="gl" title="M1 GL">
-            Tab content for Home
+            <Timeslot />
           </Tab>
           <Tab eventKey="gl2" title="M2 GL">
-            Tab content for Profile
+            <Timeslot />
           </Tab>
           <Tab eventKey="ilsi" title="M1 ILSI">
-            Tab content for Home
+            <Timeslot />
           </Tab>
           <Tab eventKey="sdsi" title="M1 SDSI">
-            Tab content for Profile
+            <Timeslot />
           </Tab>
         </Tabs>
       </div>

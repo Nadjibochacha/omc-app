@@ -8,8 +8,9 @@ import Tabs from "react-bootstrap/Tabs";
 
 const Licence = () => {
   const [key, setKey] = useState("home");
+  
   return (
-    <div>
+    <div className="bg-success " style={{height:'100vh'}}>
       <Header btn="login" />
       <div className="tabs">
         <Tabs
@@ -18,10 +19,10 @@ const Licence = () => {
           onSelect={(k) => setKey(k)}
           className="mb-3"
         >
-          <Tab eventKey="home" title="SI">
+          <Tab eventKey="si" title="SI">
             <Timeslot/>
           </Tab>
-          <Tab eventKey="profile" title="GL">
+          <Tab eventKey="gl" title="GL">
             <Timeslot/>
           </Tab>
         </Tabs>
