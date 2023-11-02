@@ -22,42 +22,13 @@ class Header extends Component {
               <Nav.Link href="/" className="text-light me-lg-5 nav-link">
                 Home
               </Nav.Link>
-              <NavDropdown
-                title="lecence"
-                className="text-light me-lg-5 nav-link"
-                id="basic-nav-dropdown"
-              >
-                <NavDropdown.Item href="#action/3.1" className="d-item">
-                  l3 si
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2" className="d-item">
-                  l3 gl
-                </NavDropdown.Item>
-              </NavDropdown>
-              <NavDropdown
-                title="master"
-                className="text-light nav-link"
-                id="basic-nav-dropdown"
-              >
-                <NavDropdown.Item href="#action/4.1" className="d-item">
-                  M1 sitw
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/4.2" className="d-item">
-                  M2 sitw
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/4.3" className="d-item">
-                  M1 gl
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/4.4" className="d-item">
-                  M2 gl
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/4.5" className="d-item">
-                  M1 ilsi
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/4.6" className="d-item">
-                  M1 sdsi
-                </NavDropdown.Item>
-              </NavDropdown>
+              <Nav.Link href="/Licence" className="text-light me-lg-5 nav-link">
+                Licence
+              </Nav.Link>
+
+               <Nav.Link href="/Master" className="text-light me-lg-5 nav-link">
+                master
+              </Nav.Link>
             </Nav>
             {this.props.Btn === "login" ? (
               <Button className="btn-log" href="/Login">
