@@ -1,12 +1,16 @@
-import React from 'react'
-import Sidebar from '../components/sidebar';
+import React from "react";
+import Sidebar from "../components/sidebar";
+import { Helmet } from "react-helmet-async";
 
 const AdminDachboard = () => {
   return (
     <div>
-      <Sidebar/>
+      <Helmet>
+        <title>Administator</title>
+      </Helmet>
+      <Sidebar />
     </div>
-  )
-}
+  );
+};
 
 export default AdminDachboard;

@@ -5,12 +5,17 @@ import Timeslot from '../components/timeslot';
 import { useState } from "react";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
+import { Helmet } from "react-helmet-async";
+
 
 const Licence = () => {
   const [key, setKey] = useState("home");
   
   return (
     <div className="bg-success " style={{height:'100vh'}}>
+       <Helmet>
+        <title>Licence</title>
+      </Helmet>
       <Header btn="login" />
       <div className="tabs">
         <Tabs

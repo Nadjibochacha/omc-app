@@ -5,11 +5,15 @@ import Tabs from "react-bootstrap/Tabs";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import Timeslot from "../components/timeslot";
+import { Helmet } from "react-helmet-async";
 
 const Master = () => {
   const [key, setKey] = useState("home");
   return (
     <div className="bg-success " style={{height:'100vh'}}>
+       <Helmet>
+        <title>Master</title>
+      </Helmet>
       <Header btn="login" />
       <div className="tabs">
         <Tabs
