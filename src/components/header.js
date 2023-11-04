@@ -29,9 +29,9 @@ class Header extends Component {
               <Nav.Link href="/Master" className="text-light me-lg-5 nav-link">
                 master
               </Nav.Link>
-              <Nav.Link href="/AdminDachboard" className="text-light me-lg-5 nav-link">
+              {/* <Nav.Link href="/AdminDachboard" className="text-light me-lg-5 nav-link">
                 admin
-              </Nav.Link>
+              </Nav.Link> */}
             </Nav>
             {this.props.Btn === "login" ? (
               <Button className="btn-log" href="/Login">
