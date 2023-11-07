@@ -8,6 +8,7 @@ import InputGroup from "react-bootstrap/InputGroup";
 import Row from "react-bootstrap/Row";
 import * as formik from "formik";
 import * as yup from "yup";
+import axios from "axios";
 
 // addition table
 const AddTable = () => {
@@ -58,18 +59,15 @@ const AddTable = () => {
                 onChange={handleChange}
               />
             </Form.Group>
-            <Form.Group as={Col} md="4" controlId="validationFormikUsername">
+            <Form.Group as={Col} md="4" controlId="validationFormik02">
               <Form.Label>Classeroom</Form.Label>
-              <InputGroup hasValidation>
-                <Form.Control
-                  type="text"
-                  placeholder="Class"
-                  aria-describedby="inputGroupPrepend"
-                  name="username"
-                  value={values.Classeroom}
-                  onChange={handleChange}
-                />
-              </InputGroup>
+              <Form.Control
+                type="text"
+                name="Classroom"
+                placeholder="Class"
+                value={values.Classeroom}
+                onChange={handleChange}
+              />
             </Form.Group>
           </Row>
           <Row className="mb-3 inputs">
@@ -138,7 +136,16 @@ const ModifyTable = () => {
   return (
     <Formik
       validationSchema={schema}
-      onSubmit={console.log}
+      onSubmit={(values) => {
+        axios
+          .post("/add-session", values)
+          .then((response) => {
+            console.log(response.data);
+          })
+          .catch((error) => {
+            console.error(error);
+          });
+      }}
       initialValues={{
         ModuleName: "",
         Level: "",
